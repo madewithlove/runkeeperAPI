@@ -221,6 +221,7 @@ class RunKeeperAPI {
 			}
 			else {
 				if ($responsecode === 200) {
+					$response = utf8_encode($response);
 					$response = htmlentities($response,ENT_NOQUOTES);
 					$decoderesponse = json_decode($response);
 					$this->api_request_log[] = array('name' => $name, 'type' => $type, 'result' => 200, 'responsecode' => $responsecode, 'time' => microtime(true)-$orig);
