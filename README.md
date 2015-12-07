@@ -2,15 +2,17 @@
 
 PHP wrapper for Runkeeper Health Graph API
 
-**Version:** 0.3.6
+**Version:** 0.4.0-dev
 
 **Author:** Pierre RASO - eX Nihili <pierre@exnihili.com>
+
+Fork from [madewithlove/runkeeper](https://github.com/madewithlove/runkeeper)
 
 ## Installation via Composer
 
 Add this to you `composer.json` file, in the require object;
 
-    "madewithlove/runkeeper": "0.3.*"
+    "opus-online/runkeeper": "dev-master"
 
 After that, run `composer install` to install the RunKeeper API wrapper.
 
@@ -25,6 +27,14 @@ After that, run `composer install` to install the RunKeeper API wrapper.
 See /usage/rk-api.sample.php
 
 ## ChangeLog :
+
+### v0.4.0 (under development)
+
+* Added namespace
+* Added proper composer auto-loading
+* Fixed code style, typos, potential php errors (undefined variable etc)
+* Added GuzzleHttp to handle connections
+* Removed authentication, this is much better done with dedicated OAuth libraries (such as yii2-authclient or Zend_Oauth)
 
 ### v0.3.6 (2014-05-02)
 
